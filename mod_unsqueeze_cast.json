@@ -1,0 +1,25 @@
+[
+ {
+   "op": "ModUnsqueezeCast",  
+   "name": "mod_unsqueeze_cast",
+   "input_desc": [     
+     {        
+       "format": "ND",      
+       "shape": [8, 300],     
+       "type": "int64"     
+     },      
+     {       
+       "format": "ND",       
+       "shape": [1],        
+       "type": "int64"       
+     }     
+   ],    
+   "output_desc": [     
+     {     
+       "format": "ND",        
+       "shape": [8, 300],     
+       "type": "float16"      
+     }    
+   ]
+ } 
+ ]
