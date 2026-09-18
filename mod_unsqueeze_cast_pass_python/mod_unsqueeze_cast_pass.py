@@ -7,7 +7,8 @@ from ge.es.custom import ModUnsqueezeCast
 class ModUnsqueezeCastPass(PatternFusionPass):
     @pattern
     def mod_cast(self, inputs):
+        print("define ModUnsqueezeCastPass")
         return Cast(Mod(inputs[0], inputs[1]))
 
     def replacement(self, inputs):
-    return ModUnsqueezeCast(inputs[0], inputs[1])
+        return ModUnsqueezeCast(inputs[0], inputs[1])
